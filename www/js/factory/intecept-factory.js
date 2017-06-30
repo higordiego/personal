@@ -1,5 +1,6 @@
-angular.module('starter.factory')
-  .factory('InteceptFactory', function ($q, $location, $localStorage) {
+(function(){
+  'use strict';
+  redeative.factory('InteceptFactory', function ($q, $location, $localStorage) {
     return {
       request: function (config) {
         var recebe = config.url.lastIndexOf('upload');
@@ -23,3 +24,4 @@ angular.module('starter.factory')
       }
     };
   });
+})();

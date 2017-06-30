@@ -1,5 +1,6 @@
-angular.module('starter.factory')
-  .factory('AuthFactory', function ($http, $localStorage, $q, $window, Config) {
+(function(){
+  'use strict';
+  redeative.factory('AuthFactory', function ($http, $localStorage, $q, $window, Config) {
     return {
       getToken: function () {
         return $localStorage.token;
@@ -23,3 +24,4 @@ angular.module('starter.factory')
       }
     };
   });
+})();
