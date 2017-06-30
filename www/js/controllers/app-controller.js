@@ -1,6 +1,9 @@
-(function(){
-  'use strict';
-  app.controller('AppCtrl', ['$scope','$state', function($scope, $state){
+
+angular.module('starter.controllers')
+  .controller('AppCtrl', function ($scope, $state) {
+
+    $scope.isExpanded = false;
+
     $scope.chats = [
       {
         id: 0,
@@ -12,27 +15,16 @@
         name: 'Higor Diego',
         lastText: 'Hipertrofia',
         face: 'img/max.png'
-      }, {
-        id: 2,
-        name: 'Mikaelle Cristina',
-        lastText: 'Hipertrofia',
-        face: 'img/adam.jpg'
-      }, {
-        id: 3,
-        name: 'Caio',
-        lastText: 'Hipertrofia',
-        face: 'img/perry.png'
-      }, {
-        id: 4,
-        name: 'Anderson',
-        lastText: 'Hipertrofia',
+      },{
+        id: 1,
+        name: 'Rodrigo Galhardo',
+        lastText: 'Mister Universo',
         face: 'img/mike.png'
       }
-    ]
+    ];
 
-    $scope.logout = function(){
+    $scope.logout = function () {
       $state.go('login')
     }
 
-  }]);
-})();
+  });

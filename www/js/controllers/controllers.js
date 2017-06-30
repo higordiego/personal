@@ -1,3 +1,1 @@
-/**
- * Created by galha on 29/06/2017.
- */
+angular.module('starter.controllers', []);

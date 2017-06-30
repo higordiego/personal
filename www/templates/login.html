@@ -1,22 +1,22 @@
-<ion-modal-view >
-	<ion-header-bar>
-		<h1 class="title">Autenticação</h1>
-	</ion-header-bar>
-	<ion-content>
-		<form ng-submit="authenticate(user)">
-			<div class="list">
-				<label class="item item-input item-floating-label">
-					<span class="input-label">ID</span>
-					<input type="number" ng-model="user.id" placeholder="Id de cadastro" >
-				</label>
-				<label class="item item-input item-floating-label">
-					<span class="input-label">Password</span>
-					<input type="password" ng-model="user.password" placeholder="Senha" >
-				</label>
-				<label class="item">
-					<button class="button button-block button-positive" type="submit">Entrar</button>
-				</label>
-			</div>
-		</form>
-	</ion-content>
-</ion-modal-view>
+<ion-view view-title="Login" align-title="left">
+  <ion-content style="background: url('img/login.jpg') center; background-size: cover;">
+    <div class="hero no-header flat">
+      <div class="content">
+        <div class="app-icon"></div>
+        <img src="../img/rede-ative-logo.png" alt="rede iterative" />
+      </div>
+    </div>
+    <div class="list">
+      <ion-md-input class="item-md-label-login" type="number" ng-model="user.id" placeholder="ID de cadastro" highlight-color="balanced"></ion-md-input>
+      <ion-md-input class="item-md-label-login" type="password" ng-model="user.password" placeholder="Senha" highlight-color="energized"></ion-md-input>
+    </div>
+    <div class="padding">
+      <button ng-click="authenticate(user)" class="button button-full button-assertive button-assertive-login ink">Login</button>
+    </div>
+    <div class="button-bar social-login">
+      <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+      <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
+      <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+    </div>
+  </ion-content>
+</ion-view>

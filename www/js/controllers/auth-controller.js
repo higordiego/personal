@@ -1,9 +1,7 @@
-(function(){
-  'use strict';
-  app.controller('AuthCtrl', ['$scope','$state'
-  ,  function($scope, $state){
+
+  angular.module('starter.controllers')
+    .controller('AuthCtrl', function($scope, $state){
     $scope.authenticate = function(user){
-      $state.go('app.home')
+      $state.go('app.home');
     }
-  }]);
-})();
+  });
