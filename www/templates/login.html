@@ -1,23 +1,30 @@
 <ion-view view-title="Login" align-title="left">
   <ion-content style="background: url('img/login.jpeg') center; background-size: cover;">
-  <!-- <ion-content style="background-color: black; background-size: cover;"> -->
+    <!-- <ion-content style="background-color: black; background-size: cover;"> -->
     <div class="hero no-header flat">
       <div class="content">
         <div class="app-icon"></div>
-        <img src="../img/rede-ative-logo.png" alt="rede iterative" />
+        <img src="../img/rede-ative-logo.png" alt="rede iterative"/>
       </div>
     </div>
     <div class="list">
-      <ion-md-input class="item-md-label-login" type="text" ng-model="user.id" placeholder="ID de cadastro" highlight-color="balanced"></ion-md-input>
-      <ion-md-input class="item-md-label-login" type="password" ng-model="user.password" placeholder="Senha" highlight-color="energized"></ion-md-input>
+      <ion-md-input class="item-md-label-login" type="text" ng-model="user.id" placeholder="ID de cadastro"
+                    highlight-color="balanced"></ion-md-input>
+      <ion-md-input class="item-md-label-login" type="password" ng-model="user.password" placeholder="Senha"
+                    highlight-color="energized"></ion-md-input>
     </div>
     <div class="padding">
-      <button ng-click="authenticate(user)" class="button button-full button-assertive button-assertive-login ink">Login</button>
+      <button ng-click="authenticate(user)" class="button button-full button-assertive button-assertive-login ink">
+        Login
+      </button>
+      <a href="#" style="text-align: center;margin-left: 35.23496585%;">esqueci a senha</a>
     </div>
     <div class="button-bar social-login">
-      <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+      <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+
+      </button>
       <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
-      <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+      <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook
+      </button>
     </div>
   </ion-content>
 </ion-view>
